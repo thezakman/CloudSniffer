@@ -579,7 +579,7 @@ def main():
     parser = argparse.ArgumentParser(description='Testa buckets em diferentes provedores de cloud')
     
     parser.add_argument('buckets', nargs='*', help='Nome(s) do(s) bucket(s) para testar')
-    parser.add_argument('--list', '-l', type=str, help='Arquivo TXT com lista de buckets (um por linha)')
+    parser.add_argument('--file', '-f', type=str, help='Arquivo TXT com lista de buckets (um por linha)')
     parser.add_argument('--timeout', type=int, default=10, help='Timeout em segundos (padrão: 10)')
     parser.add_argument('--output', type=str, help='Arquivo para salvar resultados JSON')
     parser.add_argument('--verbose', '-v', action='store_true', help='Modo verboso')
