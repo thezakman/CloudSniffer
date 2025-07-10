@@ -579,7 +579,7 @@ def main():
     parser = argparse.ArgumentParser(description='Testa buckets em diferentes provedores de cloud')
     
     parser.add_argument('buckets', nargs='*', help='Nome(s) do(s) bucket(s) para testar')
-    parser.add_argument('--file', '-f', type=str, help='Arquivo TXT com lista de buckets (um por linha)')
+    parser.add_argument('--list', '-l', type=str, help='Arquivo TXT com lista de buckets (um por linha)')
     parser.add_argument('--timeout', type=int, default=10, help='Timeout em segundos (padrão: 10)')
     parser.add_argument('--output', type=str, help='Arquivo para salvar resultados JSON')
     parser.add_argument('--verbose', '-v', action='store_true', help='Modo verboso')
@@ -588,17 +588,17 @@ def main():
     args = parser.parse_args()
     
     # Determina a lista de buckets
-    if args.file:
-        buckets = load_buckets_from_file(args.file)
-        print(f"{Colors.INFO}Carregados {len(buckets)} buckets do arquivo: {args.file}{Colors.RESET}")
+    if args.list:
+        buckets = load_buckets_from_file(args.list)
+        print(f"{Colors.INFO}Carregados {len(buckets)} buckets do arquivo: {args.list}{Colors.RESET}")
     elif args.buckets:
         buckets = args.buckets
     else:
-        print(f"{Colors.ERROR}Especifique buckets diretamente ou use --file para carregar de arquivo!{Colors.RESET}")
+        print(f"{Colors.ERROR}Especifique buckets diretamente ou use --list para carregar de arquivo!{Colors.RESET}")
         print("Exemplos:")
         print("  python3 cloudSniff.py bucket1 bucket2")
-        print("  python3 cloudSniff.py --file buckets.txt")
-        print("  python3 cloudSniff.py --file buckets.txt --status 200,403")
+        print("  python3 cloudSniff.py --list buckets.txt")
+        print("  python3 cloudSniff.py --list buckets.txt --status 200,403")
         sys.exit(1)
     
     # Processa filtro de status codes
