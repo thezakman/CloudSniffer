@@ -16,13 +16,6 @@ O CloudSniff v3.0 é um testador avançado de buckets em múltiplos provedores d
 
 ## Novidades da v3.0
 
-### Novos Provedores Suportados
-- **Wasabi Cloud Storage** - S3-compatible com preços competitivos
-- **Vultr Object Storage** - Storage de alta performance
-- **Scaleway Object Storage** - Storage europeu
-- **OVH Cloud Storage** - Provedor francês
-- **MinIO** - Self-hosted S3-compatible storage
-
 ### Novos Parâmetros
 - `--workers N` - Controla número de threads paralelas (padrão: 15)
 - `--profile PERFIL` - Especifica perfil AWS para usar
