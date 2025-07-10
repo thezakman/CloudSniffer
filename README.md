@@ -1,4 +1,4 @@
-#CloudSniffer
+# Cloud Bucket Tester
 ```
                          .--.
                     .-.,(    ).            
