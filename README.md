@@ -14,7 +14,7 @@
 
 O CloudSniff v3.0 é um testador avançado de buckets em múltiplos provedores de cloud com recursos expandidos e testes aprimorados.
 
-## Novidades da v3.0
+## Novidades da v3.1
 
 ### Novos Parâmetros
 - `--workers N` - Controla número de threads paralelas (padrão: 15)
