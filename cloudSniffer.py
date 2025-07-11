@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.11
 """
-Cloud Bucket Tester - Version 3.0
+Cloud Bucket Tester - Version 3.1
 Test different bucket configurations across multiple cloud providers.
 Author: TheZakMan
 """
@@ -50,7 +50,7 @@ Y88b  d88P 888 Y88..88P Y88b 888 Y88b 888 Y88b  d88P 888  888 888 888    888
 """
 
     print(random.choice([b1, b2]))
-    print(f"{Fore.RESET}{Fore.CYAN + Style.BRIGHT}☁️ Cloud Bucket Tester - v3.0{Fore.RESET}")
+    print(f"{Fore.RESET}{Fore.CYAN + Style.BRIGHT}☁️ Cloud Bucket Tester - v3.1{Fore.RESET}")
     print(f"{Fore.YELLOW}https://github.com/thezakman/cloudsniff{Fore.RESET}")
 
 # Inicializa colorama
@@ -234,9 +234,9 @@ class CloudBucketTester:
             f'https://storage.googleapis.com/{bucket}/',
             f'https://{bucket}.storage.googleapis.com/',
             f'https://{bucket}.storage.googleapis.com',
-            f'https://storage.cloud.google.com/{bucket}',
-            f'https://storage.cloud.google.com/{bucket}/',
-            f'https://console.cloud.google.com/storage/browser/{bucket}',
+            #f'https://storage.cloud.google.com/{bucket}',
+            #f'https://storage.cloud.google.com/{bucket}/',
+            #f'https://console.cloud.google.com/storage/browser/{bucket}',
             f'https://www.googleapis.com/storage/v1/b/{bucket}/o',
         ]
     
